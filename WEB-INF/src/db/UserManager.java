@@ -40,4 +40,11 @@ public class UserManager extends DataBaseManager{
 
 		return (User)getRecord(sql);
 	}
+
+	public LinkedList<User> getUsers(){
+		String sql = "";
+		sql += "Select * from UserInfo";
+
+		return (LinkedList<User>)getRecords(sql);
+	}
 }
